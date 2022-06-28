@@ -72,7 +72,7 @@ if biggest.size != 0:
     imgInvWarped = cv2.warpPerspective(imgSolved, matrix, (450,450))
 
     final = cv2.addWeighted(imgInvWarped, 1, img, 0.5, 1)
-    print("The solution coming up...")
+
     cv2.imshow('image', final)
     cv2.waitKey(0)
 
